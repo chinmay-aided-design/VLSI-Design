@@ -1,0 +1,16 @@
+* SPICE3 file created from buf.ext - technology: sky130A
+
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+Vpower Vp gnd 1.8
+Vinput Vi gnd PULSE(0 1.8 0 .1n .1n 3n 6.6n 5)
+
+
+X0 inv_v3_1/A Vi Vp Vp sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.175 ps=1.7 w=0.5 l=0.15
+X1 inv_v3_1/A Vi Vp Vp sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.175 ps=1.7 w=0.5 l=0.15
+X2 Vo inv_v3_1/A Vp Vp sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.75 ps=7 w=0.5 l=0.15
+X3 Vo inv_v3_1/A Vp Vp sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.75 ps=7 w=0.5 l=0.15
+
+.tran 0.02n 10n
+.end
