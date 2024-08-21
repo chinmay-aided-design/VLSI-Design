@@ -1,0 +1,75 @@
+magic
+tech sky130A
+timestamp 1724230040
+<< nwell >>
+rect -15 -25 125 190
+<< pmos >>
+rect 55 -5 70 95
+<< pdiff >>
+rect 20 85 55 95
+rect 20 5 25 85
+rect 45 5 55 85
+rect 20 -5 55 5
+rect 70 85 105 95
+rect 70 5 80 85
+rect 100 5 105 85
+rect 70 -5 105 5
+<< pdiffc >>
+rect 25 5 45 85
+rect 80 5 100 85
+<< nsubdiff >>
+rect 5 160 60 170
+rect 5 135 20 160
+rect 45 135 60 160
+rect 5 125 60 135
+<< nsubdiffcont >>
+rect 20 135 45 160
+<< poly >>
+rect 55 95 70 110
+rect 55 -25 70 -5
+rect 15 -30 70 -25
+rect 15 -50 25 -30
+rect 45 -50 70 -30
+rect 15 -55 70 -50
+<< polycont >>
+rect 25 -50 45 -30
+<< locali >>
+rect 5 160 60 170
+rect 5 135 20 160
+rect 45 135 60 160
+rect 5 125 60 135
+rect 25 95 45 125
+rect 20 85 50 95
+rect 20 5 25 85
+rect 45 5 50 85
+rect 20 -5 50 5
+rect 75 85 105 95
+rect 75 5 80 85
+rect 100 5 105 85
+rect 75 -5 105 5
+rect 80 -25 100 -5
+rect 15 -30 55 -25
+rect 15 -50 25 -30
+rect 45 -50 55 -30
+rect 15 -55 55 -50
+rect 80 -30 135 -25
+rect 80 -50 105 -30
+rect 125 -50 135 -30
+rect 80 -55 135 -50
+<< viali >>
+rect 20 135 45 160
+rect 105 -50 125 -30
+<< metal1 >>
+rect 5 160 60 170
+rect 5 135 20 160
+rect 45 135 60 160
+rect 5 125 60 135
+rect 80 -30 135 -25
+rect 80 -50 105 -30
+rect 125 -50 135 -30
+rect 80 -55 135 -50
+<< labels >>
+rlabel nwell 20 135 45 160 1 Vdd
+rlabel viali 105 -50 125 -30 1 Vout
+rlabel polycont 25 -50 45 -30 1 Vin
+<< end >>
