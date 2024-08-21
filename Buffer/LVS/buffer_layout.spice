@@ -1,0 +1,6 @@
+* SPICE3 file created from buf.ext - technology: sky130A
+
+X0 inter Vin Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.35 pd=2.7 as=0.35 ps=2.7 w=1 l=0.15
+X1 inter Vin gnd gnd sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X2 Vout inter Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.35 pd=2.7 as=0.7 ps=5.4 w=1 l=0.15
+X3 Vout inter gnd gnd sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.35 ps=3.4 w=0.5 l=0.15

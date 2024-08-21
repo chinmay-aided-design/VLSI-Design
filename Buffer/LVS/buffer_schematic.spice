@@ -1,0 +1,25 @@
+** sch_path: /home/chinmay/Desktop/Analog Design/CMOS/Buffer/Buffer Schema/buffer.sch
+**.subckt buffer Vp Vi Vo Vn
+*.ipin Vi
+*.opin Vo
+*.iopin Vp
+*.iopin Vn
+x1 Vp Vi net1 Vn inv
+x2 Vp net1 Vo Vn inv
+**.ends
+
+* expanding   symbol:  /home/chinmay/Desktop/Analog Design/CMOS/Inverter/Inverter Schema/inv.sym # of pins=4
+** sym_path: /home/chinmay/Desktop/Analog Design/CMOS/Inverter/Inverter Schema/inv.sym
+** sch_path: /home/chinmay/Desktop/Analog Design/CMOS/Inverter/Inverter Schema/inv.sch
+.subckt inv Vp A Y Vn
+*.ipin A
+*.opin Y
+*.ipin Vp
+*.ipin Vn
+XM1 Y A Vp Vp sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A Vn Vn sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
