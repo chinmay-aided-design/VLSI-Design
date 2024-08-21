@@ -1,0 +1,16 @@
+* SPICE3 file created from buf.ext - technology: sky130A
+
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+Vpower Vdd gnd 1.8
+Vgs Vin gnd 0
+Vds Vout gnd 0
+
+
+X0 Vout Vin gnd gnd sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+
+
+.dc Vds 0 1.8 .1m Vgs 0 1.8 0.6    
+.save all
+.end"
