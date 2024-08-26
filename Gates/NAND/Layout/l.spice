@@ -1,0 +1,20 @@
+* SPICE3 file created from nand.ext - technology: sky130A
+
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+Vpower Vdd gnd 1.8
+Va A gnd PULSE(0 1.8 0 .1n .1n 3n 6.6n 5)
+Vb B gnd PULSE(0 1.8 0 .1n .1n 3n 6.6n 5)
+
+* SPICE3 file created from nand.ext - technology: sky130A
+
+X0 Vdd B out Vdd sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X1 out A Vdd Vdd sky130_fd_pr__pfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X2 out A a_40_n280# gnd sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+X3 a_40_n280# B gnd gnd sky130_fd_pr__nfet_01v8 ad=0.175 pd=1.7 as=0.175 ps=1.7 w=0.5 l=0.15
+
+.tran 0.02n 10n
+.end
+
+
